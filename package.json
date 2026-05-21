@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "n8n community nodes for uazapiGO V2 (WhatsApp) — actions + trigger (webhook & SSE).",
   "license": "MIT",
-  "homepage": "https://github.com/saraivaai/n8n-nodes-uazapi",
+  "homepage": "https://github.com/saraivabr/n8n-nodes-uazapi#readme",
   "keywords": [
     "n8n-community-node-package",
     "n8n",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/saraivaai/n8n-nodes-uazapi.git"
+    "url": "https://github.com/saraivabr/n8n-nodes-uazapi.git"
   },
   "scripts": {
     "build": "n8n-node build",
