@@ -1,0 +1,49 @@
+{
+  "name": "@saraivadev/n8n-nodes-uazapi",
+  "version": "0.1.0",
+  "description": "n8n community nodes for uazapiGO V2 (WhatsApp) — actions + trigger (webhook & SSE).",
+  "license": "MIT",
+  "homepage": "https://github.com/saraivaai/n8n-nodes-uazapi",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "uazapi",
+    "whatsapp",
+    "whatsapp-api",
+    "messaging"
+  ],
+  "author": {
+    "name": "Saraiva.ai",
+    "email": "fellipesaraivabarbosa@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saraivaai/n8n-nodes-uazapi.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": false,
+    "credentials": ["dist/credentials/UazapiApi.credentials.js"],
+    "nodes": [
+      "dist/nodes/Uazapi/Uazapi.node.js",
+      "dist/nodes/UazapiTrigger/UazapiTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.39.4",
+    "prettier": "3.8.3",
+    "release-it": "20.0.1",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": { "n8n-workflow": "*" }
+}
